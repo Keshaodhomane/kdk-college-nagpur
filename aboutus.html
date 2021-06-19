@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css" integrity="sha512-x9WWODH0qw+aXoiT69XzI4WX2MXpqvVGY+O9HpJ4wbjEubpjDIM5CwTrU/OFJg7tSMbBMpgwz2Qp6xlUsk+FgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link title="theme" id="theme" rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body >    
+
+  <div class="bluebg-strip bg-dark d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 ">
+          <div class="allinline text-center"> <span> <script> var d = new Date();
+                   var n = d.toDateString();
+                     document.write(n + "&nbsp; | &nbsp;"+ d.getHours() + " : "+d.getMinutes());
+                   </script>
+            </span> 
+            <a href="index.php"><img src="images/home_icon.svg" width="14" height="auto"></a> 
+            <a href="#skiptomain" class="skiptomain">Skip to main content</a> 
+            <a href="#skiptonav" class="skiptonav">Skip to Navigation</a> 
+            <a href="#" class="screenreader">Screen Reader Access</a> 
+
+            <a href="#" class="default-css" id="defaultstyle">A</a> 
+            <a href="#" class="css1" id="css1">A</a> 
+            <a href="#" class="css2" id="css2">A</a> 
+            <a href="#" class="css3" id="css3">A</a> 
+
+            <span>Text Size : <button class="btn text-white btn-xs" onclick="DecreaseFontSize()">A<sup>-</sup></button> 
+            
+            <button class="btn text-white btn-xs"  onclick="javascript:window.location.reload();">A</button> 
+            
+            <button class="btn text-white btn-xs" onclick="IncreaseFontSize()">A<sup>+</sup></button> 
+          </span> 
+        </div>
+        
+      
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container justify-content-end justify-content-sm-center ">
+            <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-md-center">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MANAGMENT
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  AMENITIES
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DAPARTMENTS
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FACULTY
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ALUMNI
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PHOTO GALLERY
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  TRAINING & PLACEMENT
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRESS RELEASES
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+
+            </ul>
+            </div>
+        </div>
+      </nav>
+    <!-- end navbar-->
+
+
+
+
+    <!-- page title and button -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col py-4">
+
+                <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+                        
+                    <div class="d-flex flex-column flex-md-row align-items-stretch">
+
+                        <div class="align-self-center align-self-md-end"><img src="images/kdk-logo.png" width="120" alt=""></div>
+                        <div class="align-self-center align-self-md-end mx-md-3 siteheading text-center pt-md-0 pt-3">
+                                <h1>KDK COLLEGE OF ENGINEERING, NAGPUR</h1>
+                                <h2 class="text-primary">SeRving TECHNICAL EDUCATION SINCE 1984</h2>
+                                <p>NBA Accredited - Five programs, Grade A, NAAC Accredited </p>
+                        </div>
+                        <div class="align-self-center  align-self-md-end d-none d-md-block"><img src="images/kdk-group-logo.png" width="167" alt=""></div>
+                    </div>
+
+
+
+                    <div class="pt-md-0 pt-3"><button class="btn btn-secondary font-weight-bold px-4 py-2">ADMISSION OPEN - 2021 <img src="images/icon-right-arrow.svg" width="14"  alt=""></button></div>
+
+                </div>
+
+            </div>
+            </div>
+    </div>
+
+<!-- end page title and button-->
+
+
+<div class="internalpage bg-grey">
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 col-sm-12 py-3 py-md-5 ">
+
+                <div class="internallinks bg-white card">
+
+                    <h2 class="py-3 text-center m-0 px-0 bg-secondary mb-3">Quick Links</h2>
+
+
+                    <div class="px-md-4">
+                   
+                    <ul>
+
+                        <li>
+                          <a href="javascript:;" class="text-dark"> Research Projects & Grants </a>
+                        </li>
+          
+                        <li>
+                          <a href="javascript:;" class="text-dark"> Research Innovations  </a>
+                        </li>
+          
+                        <li>
+                          <a href="javascript:;" class="text-dark"> Anti-Ragging Committee </a>
+                        </li>
+          
+                        <li>
+                          <a href="javascript:;" class="text-dark"> Grievance Redressal </a>
+                        </li>
+          
+                        <li>
+                          <a href="javascript:;" class="text-dark"> HR Manual </a>
+                        </li>
+          
+                        <li>
+                          <a href="javascript:;" class="text-dark"> Audit statement </a>
+                        </li>
+          
+                        <li>
+                          <a href="javascript:;" class="text-dark"> National Service Scheme -NSS </a>
+                        </li>
+          
+                        <li>
+                          <a href="javascript:;" class="text-dark"> Code of Conduct &  Values </a>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript:;" class="text-dark"> Research Projects & Grants </a>
+                          </li>
+            
+                          <li>
+                            <a href="javascript:;" class="text-dark"> Research Innovations  </a>
+                          </li>
+            
+                          <li>
+                            <a href="javascript:;" class="text-dark"> Anti-Ragging Committee </a>
+                          </li>
+            
+                          <li>
+                            <a href="javascript:;" class="text-dark"> Grievance Redressal </a>
+                          </li>
+            
+                          <li>
+                            <a href="javascript:;" class="text-dark"> HR Manual </a>
+                          </li>
+            
+                          <li>
+                            <a href="javascript:;" class="text-dark"> Audit statement </a>
+                          </li>
+            
+                          <li>
+                            <a href="javascript:;" class="text-dark"> National Service Scheme -NSS </a>
+                          </li>
+            
+                          <li>
+                            <a href="javascript:;" class="text-dark"> Code of Conduct &  Values </a>
+                          </li>
+                       
+          
+                      </ul>
+
+                    </div>
+                    
+
+
+                </div>
+            </div>
+
+
+
+            <div class="col-12 col-md-9 col-sm-12 py-3 py-md-5 rounded-5 ">
+
+                <div class="aboutcontent bg-white px-md-4 py-3">
+
+
+                    <h2>
+                        ABOUT US
+                    </h2>
+                    <p>Dolores consequatur commodi laudantium impedit voluptatibus dolores. Mollitia consequuntur voluptas qui sunt. Ea ab officiis quidem quis non earum recusandae. Illum et sit quae.</p>
+
+                       <p> Rem autem nobis laborum ducimus. Aut aut aliquam veritatis. Voluptatem repellat omnis libero sit id quaerat quis rerum.</p>
+                        
+                       <p> Non enim qui voluptatum debitis eveniet esse accusamus sed. Libero quas consequuntur quia quibusdam corporis. Laboriosam doloribus perferendis voluptatibus. Ut culpa quidem culpa consequuntur delectus.</p>
+                        
+                       <p> Fugiat vel inventore repudiandae assumenda delectus dolor nisi. Eum laboriosam sed velit magni necessitatibus. Eum earum illo saepe est magnam. </p>
+                        
+                       <p> Quasi commodi tempora excepturi sed amet libero pariatur. Dignissimos quis asperiores officiis ex eius et. Voluptatem id voluptatem quaerat maiores consectetur.</p>
+
+
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+
+<!-- footer-->
+<div class="footer bg-primary py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <div><img src="images/logo-kdk-white.png" alt=""></div>
+        <div><h2 class="text-white mt-3">KDK COLLEGE OF ENGINEERING, NAGPUR</h2></div>
+        <div class="social-icons">
+          <a href="javascript:;" class="mx-2"> <img src="images/icon-facebook.svg" width="40" alt="">  </a>
+          <a href="javascript:;" class="mx-2"> <img src="images/icon-twitter.svg" width="40" alt="">  </a>
+          <a href="javascript:;" class="mx-2"> <img src="images/icon-instagram.svg" width="40" alt="">  </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <h4 class="text-secondary">Quick Links</h4>
+        <ul>
+          <li><a href="javascript:;" class="text-white"  > Home  </a></li>
+          <li><a href="javascript:;" class="text-white"  > About   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Courses  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Exam   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Time Table  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Results  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Student Development   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Advertisements    </a></li>
+          <li><a href="javascript:;" class="text-white"  > Photo Gallery     </a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <h4 class="text-secondary">Quick Links</h4>
+        <ul>
+          <li><a href="javascript:;" class="text-white"  > Home  </a></li>
+          <li><a href="javascript:;" class="text-white"  > About   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Courses  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Exam   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Time Table  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Results  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Student Development   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Advertisements    </a></li>
+          <li><a href="javascript:;" class="text-white"  > Photo Gallery     </a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <h4 class="text-secondary mb-3">Contact Address</h4>
+     
+          <div class="d-flex flex-row align-items-start">
+            <div class="pe-3"> <img src="images/icon-location.svg" width="16" alt=""> </div>
+            <div> <p class="text-white">Great Nag Road, Nandanvan, Nagpur– 440 024 (M.S.)</p> </div>
+          </div>
+
+
+          <div class="d-flex flex-row align-items-start">
+            <div class="pe-3"> <img src="images/icon-phone.svg" width="25" alt=""> </div>
+            <div> <h2 class="text-secondary m-0 p-0">0712-2711400</h2> </div>
+          </div>
+
+
+          <div  class="mt-3 bg-secondary p-5 rounded-3">
+            <form>
+              <div class="mb-3">
+                
+                <input type="text" placeholder="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+              </div>
+              <div class="mb-3">
+               
+                <input type="email" placeholder="Email" class="form-control" id="exampleInputPassword1">
+              </div>
+             
+              <button type="submit" class="btn btn-primary btn-lg">Subscribe </button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end footer-->
+
+
+<!-- lastfooter-->
+<div class="lastfooter bg-dark">
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <p class="text-center text-white py-4">
+        Copyright © 2021  KDK College of Engineering, Nagpur  All rights reserved.
+      </p>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- end lastfooter-->
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js" integrity="sha512-qqdD5ZLIGB5PCqCk1OD8nFBr/ngB5w+Uw35RE/Ivt5DK35xl1PFVkuOgAbqFpvtoxX6MpRGLmIqixzdhFOJhnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

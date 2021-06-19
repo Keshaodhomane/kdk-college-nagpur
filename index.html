@@ -1,0 +1,1205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.css" integrity="sha512-x9WWODH0qw+aXoiT69XzI4WX2MXpqvVGY+O9HpJ4wbjEubpjDIM5CwTrU/OFJg7tSMbBMpgwz2Qp6xlUsk+FgA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link title="theme" id="theme" rel="stylesheet" type="text/css" href="css/default.css">
+</head>
+<body >    
+
+  <div class="bluebg-strip bg-dark d-none d-md-block">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 ">
+          <div class="allinline text-center"> <span> <script> var d = new Date();
+                   var n = d.toDateString();
+                     document.write(n + "&nbsp; | &nbsp;"+ d.getHours() + " : "+d.getMinutes());
+                   </script>
+            </span> 
+            <a href="index.php"><img src="images/home_icon.svg" width="14" height="auto"></a> 
+            <a href="#skiptomain" class="skiptomain">Skip to main content</a> 
+            <a href="#skiptonav" class="skiptonav">Skip to Navigation</a> 
+            <a href="#" class="screenreader">Screen Reader Access</a> 
+
+            <a href="#" class="default-css" id="defaultstyle">A</a> 
+            <a href="#" class="css1" id="css1">A</a> 
+            <a href="#" class="css2" id="css2">A</a> 
+            <a href="#" class="css3" id="css3">A</a> 
+
+            <span>Text Size : <button class="btn text-white btn-xs" onclick="DecreaseFontSize()">A<sup>-</sup></button> 
+            
+            <button class="btn text-white btn-xs"  onclick="javascript:window.location.reload();">A</button> 
+            
+            <button class="btn text-white btn-xs" onclick="IncreaseFontSize()">A<sup>+</sup></button> 
+          </span> 
+        </div>
+        
+      
+      </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container justify-content-end justify-content-sm-center ">
+            <div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>         
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 justify-content-md-center">
+            
+              <li class="nav-item">
+                <a class="nav-link" href="#">HOME</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  MANAGMENT
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  AMENITIES
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  DAPARTMENTS
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  FACULTY
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  ALUMNI
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PHOTO GALLERY
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  TRAINING & PLACEMENT
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  PRESS RELEASES
+                </a>
+                <ul class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">CONTACT</a>
+              </li>
+
+            </ul>
+            </div>
+        </div>
+      </nav>
+    <!-- end navbar-->
+
+
+
+
+    <!-- page title and button -->
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col py-4">
+
+                <div class="d-flex flex-column flex-md-row justify-content-md-between align-items-center">
+                        
+                    <div class="d-flex flex-column flex-md-row align-items-stretch">
+
+                        <div class="align-self-center align-self-md-end"><img src="images/kdk-logo.png" width="120" alt=""></div>
+                        <div class="align-self-center align-self-md-end mx-md-3 siteheading text-center pt-md-0 pt-3">
+                                <h1>KDK COLLEGE OF ENGINEERING, NAGPUR</h1>
+                                <h2 class="text-primary">SeRving TECHNICAL EDUCATION SINCE 1984</h2>
+                                <p>NBA Accredited - Five programs, Grade A, NAAC Accredited </p>
+                        </div>
+                        <div class="align-self-center  align-self-md-end d-none d-md-block"><img src="images/kdk-group-logo.png" width="167" alt=""></div>
+                    </div>
+
+
+
+                    <div class="pt-md-0 pt-3"><button class="btn btn-secondary font-weight-bold px-4 py-2">ADMISSION OPEN - 2021 <img src="images/icon-right-arrow.svg" width="14"  alt=""></button></div>
+
+                </div>
+
+            </div>
+            </div>
+    </div>
+
+<!-- end page title and button-->
+
+
+
+<!-- banner-->
+<div class="banner bg-primary">
+
+
+
+<div class="sliderwrapper">
+  
+
+  <div class="eachslide">
+
+    <div class="textbox righttext">
+        <div class="p-5">
+        <h2>A Significant Learning Curve for Students</h2>
+        <p>We prepare students to be well-rounded professionals, responsible leaders, and lifelong learners through a rigorous engineering education enhanced by interdisciplinary connections in humanities and science & technology</p>
+        <button class="btn btn-secondary">READ MORE <img src="images/icon-right-arrow.svg" width="14"  alt=""> </button>
+        </div>
+    </div>
+
+<div class="bannerimg bg-secondary leftimg">
+  <img src="images/bannerimg.jpg" class="img-fluid" alt="">
+</div>
+</div>
+
+
+
+
+
+<div class="eachslide">
+
+  <div class="textbox righttext">
+      <div class="p-5">
+      <h2>Collaborative Environment to Foster Professional Excellence</h2>
+      <p>We prepare students to be well-rounded professionals, responsible leaders, and lifelong learners through a rigorous engineering education enhanced by interdisciplinary connections in humanities and science & technology</p>
+      <button class="btn btn-secondary">READ MORE <img src="images/icon-right-arrow.svg" width="14"  alt=""> </button>
+      </div>
+  </div>
+
+<div class="bannerimg bg-secondary leftimg">
+<img src="images/bannerimg2.jpg" class="img-fluid" alt="">
+</div>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- end banner-->
+
+  
+<!-- scrolling marquee-->
+<div class="bg-grey">  
+<div class="container">
+  <div class="row">
+    <div class="col">     
+      <marquee behavior="" direction="left" scrollamount="4" onmouseover="stop();" onmouseout="start();" class="marquee">
+       <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+       <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>
+       <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+       <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>
+       <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+       <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>
+       <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+       <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>    
+       
+      </marquee>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- end scrolling marquee-->
+
+
+
+
+<!-- about college -->
+<div class="container about">
+  <div class="row">
+    <div class="col-12">
+        <div class="d-flex flex-column flex-md-row my-sm-5">
+        <div class="mt-3 mt-sm-0">
+          <img src="images/kdk-college-engineering.jpg" class="rounded  d-none d-sm-block" alt="">
+          <img src="images/kdk-college-engineering.jpg" class="rounded img-fluid d-block d-sm-none  " alt="">
+        </div>
+        <div class="mt-3 mt-sm-0  flex-grow-1">
+
+ <div class="ms-sm-5">
+          <div class="rounded-pill border border-dark-100 border-primary">
+            <marquee behavior="" direction="left" scrollamount="3" onmouseover="stop();" onmouseout="start();" class="marquee">
+              <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+              <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>
+              <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+              <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>
+              <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+              <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>
+              <span> Alumni Meet-2021 scheduled on 25-09-2021  </span>   
+              <span> Management Principal and Vice-Principal wishes a very Happy and Prosporous New Year 2020 to all Stakeholders  </span>    
+              
+             </marquee>
+          </div>
+
+
+          <h1 class="my-3">Welcome to KDK College of Engineering, Nagpur</h1>
+          <h5 class="mb-3 text-primary">Since its founding KDK College of Engineering has emphasized its strengths in engineering, science and technology to train men and women to become leaders. </h5>
+          <p>Since its founding KDK College of Engineering has emphasized its strengths in engineering, science and technology to train men and women to become leaders. In little over a century, KDK Group has transformed itself into a large, comprehensive institution committed to excellence in education, research and service to the engineering society and to the broader community. Although much has changed, the original mission of the university still rings true today.</p>
+
+
+          <div class="d-flex flex-column flex-sm-row  justify-content-sm-between">
+            <div><button class="btn btn-secondary">READ MORE <img src="images/icon-right-arrow.svg" width="14" alt=""></button></div>
+            <div class="d-flex justify-content-start justify-content-sm-end ">
+              <div class="align-self-center mr-2 text-primary">Chairman's Message &nbsp;</div>
+              <div><img src="images/icon-yellow-arrow.svg" width="40" alt=""></div>
+            </div>
+          </div>
+         </div>
+
+
+        </div>
+        
+      </div>
+
+
+    </div>
+  </div>
+</div>
+<!-- end about college section-->
+
+
+
+
+<!-- affiliations-->
+
+
+<div class="affiliation bg-grey">
+
+<div class="container py-4 pt-sm-5 pb-md-5">
+  <div class="row">
+    <div class="col">
+      <h2 class="text-center font-weight-bold mb-4">Accreditation & Affiliations</h2>
+
+      <div class="swiper-container mySwiper overflow-hidden">
+        <div class="swiper-wrapper d-flex justify-content-between ">
+
+          <div class="swiper-slide bg-white d-flex flex-column align-items-center justify-content-center px-4 rounded-3">
+            <div><img src="images/logo-aicte.png" alt=""></div>
+            <div class="text-center mt-1">AICTE, New Delhi and Govt. of Maharashtra.</div>
+          </div>
+
+
+
+          <div class="swiper-slide bg-secondary d-flex flex-column align-items-center justify-content-center px-4 rounded-3">
+            <div><img src="images/logo-nba.png" alt=""></div>
+            <div class="text-center mt-1">National Board Of Accreditation</div>
+          </div>
+
+
+
+          <div class="swiper-slide bg-white d-flex flex-column align-items-center justify-content-center px-4 rounded-3">
+            <div><img src="images/logo-rtmnu.png" alt=""></div>
+            <div class="text-center mt-1">Rashtrasant Tukadoji Maharaj Nagpur University</div>
+          </div>
+
+
+
+          <div class="swiper-slide  bg-secondary d-flex flex-column align-items-center justify-content-center px-4 rounded-3">
+            <div><img src="images/logo-govt-maharashtra.png" alt=""></div>
+            <div class="text-center mt-1">Approved by Govt. of Maharashtra.</div>
+          </div>
+
+
+          
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<!-- end affiliations-->
+
+
+
+
+<!--News & Events-->
+<div class="news-notice">
+<div class="overlaycolor">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="d-flex flex-column flex-sm-row">
+
+        <div class="flex-grow-1 p-3 p-sm-5 ">
+          <h2 class="text-white">News & Events</h2>
+
+          <marquee behavior="" direction="up" scrollamount="4" onmouseover="stop();" onmouseout="start();" height="400" class="newsmarquee">
+            <ul>
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+            </ul>
+          </marquee>
+
+        </div>
+
+
+        <div class="flex-grow-1 p-3 p-sm-5">
+          <h2 class="text-white">Notice Board</h2>
+
+
+          <marquee behavior="" direction="up" scrollamount="6" onmouseover="stop();" onmouseout="start();" height="400" class="newsmarquee">
+            <ul>
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+              <li class="py-3 border-bottom">
+                <div class="d-flex flex-row align-items-start ">
+                 <div class="bg-primary me-3  text-white text-center border border-white-100">
+                    <div class="mt-2 datewidth"> 
+                      <h3 class="text-secondary"> 01 </h3>
+                    </div> 
+                    <div class="mb-2">JAN 2021</div>
+                  </div>
+                  <div>
+                    <p class="text-white">Please check all upcoming exam time tables in India KDK College of Engineering, Nagpur</p>
+                  </div>
+                </div>
+              </li>
+
+
+
+
+            </ul>
+          </marquee>
+
+      
+
+
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+<!-- end news and events-->
+
+<!-- research and admission section -->
+<div class="d-flex flex-column flex-sm-row align-items-stretch justify-content-between ">
+  
+
+
+  <div class="w-100">
+
+
+    <div class="d-flex  flex-sm-row p-4 p-sm-5 bg-secondary ">
+      <div><img src="images/icon-admission-guidelines.svg" width="85" alt=""></div>
+      <div class="ms-4">
+        <h2 class="text-dark">Admission Guidelines</h2>
+        <p class="text-dark"> KDK College of Engineering offers 11 undergraduate majors plus a number of minors and concentrations, as well as 18 graduate degree programs.</p>
+      <button class="btn btn-white btn-lg">READ MORE <img src="images/icon-right-arrow.svg" width="14"  alt=""></button> </div>
+    </div>
+
+
+
+
+    <div class="d-flex  flex-sm-row p-4 p-sm-5 bg-darkyellow ">
+      <div><img src="images/icon-research.svg" width="85" alt=""></div>
+      <div class="ms-4">
+        <h2 class="text-dark">Research and Design</h2>
+        <p class="text-dark"> The college educates through innovative research, using current technologies and a focus on critical societal challenges.</p>
+        <button class="btn btn-white btn-lg">READ MORE <img src="images/icon-right-arrow.svg" width="14"  alt=""></button> </div>
+    </div>
+
+
+
+
+
+  </div>
+
+
+  <div class="bg-primary w-100 featuredevent d-flex flex-column align-items-center justify-content-center text-center p-4">
+    <img src="images/logo-kdk-white.png" alt="">
+    <h2 class="mt-4 text-white">SPARK' 21</h2>
+    <p class="text-white">XVI National Conference on Emerging Technology Trends in Engineering & Project Competition</p>
+    <button class="btn btn-lg border border-white text-white"> 23rd August 2021 </button>
+  </div>
+
+</div>
+<!-- end research and admission section-->
+
+
+
+
+<!-- courses offered-->
+<div class="courses py-5">
+<div class="container">
+  <div class="row">
+    <div class="col">
+        <h2 class="text-center mb-5">Courses Offered</h2>
+
+        <div class="d-flex flex-column flex-sm-row">
+
+
+          <div class="pe-5">
+
+            <h3 class="">Under Graduate </h3>
+
+            <div class="px-4 py-2 mt-3  rounded-pill bg-secondary ">
+              <h4 class="text-dark text-center m-0 p-0">B. E. & B. Tech</h4>
+            </div>
+
+
+            <ul class="mt-3">
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Civil Engineering </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Computer Science </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Electrical Engineering </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Electronics Engineering </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Information Technology </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Mechanical Engineering </a></li>
+            </ul>
+
+
+
+          </div>
+          
+          
+          <div class="pe-5">
+
+            <h3 class="mt-sm-0 mt-5">Post Graduate </h3>
+
+            <div class="px-4 py-2 mt-3  rounded-pill bg-secondary ">
+              <h4 class="text-dark text-center m-0 p-0">B. E. & B. Tech</h4>
+            </div>
+
+
+            <ul class="mt-3">
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Marketing </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Finance </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Human Resources </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Information Technology </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> HealthCare  </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Banking & Financial </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Power Management </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Environment Management </a></li>
+            </ul>
+
+
+
+          </div>
+
+
+
+          <div class="pe-0">
+
+            <h3>&nbsp; </h3>
+
+            <div class="px-4 py-2 mt-3 rounded-pill bg-secondary ">
+              <h4 class="text-dark text-center m-0 p-0">M. Tech</h4>
+            </div>
+
+
+            <ul class="mt-3">
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Mechanical Engineering </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Civil Engineering </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Information Technology </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Electrical </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Chemical Engineering  </a></li>
+              <li><a href="#" class="py-2 ps-4 text-dark d-block"> Biotechnology  </a></li>
+            </ul>
+
+
+
+          </div>
+          
+
+          <div>
+
+          </div>
+
+
+
+        
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+<!-- end courses section-->
+
+
+
+<!-- testimonials section -->
+
+<div class="testimonials">
+  <div class="bg-primary greenht"> </div>
+  <div class="bg-secondary yellowht"> </div>
+ 
+  <div class="testimonialscontainer">
+
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-md-10 mx-md-auto">
+          <h2 class="text-white mt-5  mb-5 text-center">Testimonials</h2>
+
+          <div class="border border-secondary border-5 rounded-3">
+            <div class="swiper-container testimonialSwiper">
+
+              <div class="swiper-wrapper">
+
+
+
+
+
+
+
+                <div class="swiper-slide"  
+                style="background: url(images/engineering-student.jpg) no-repeat center center;">
+                <div class="testimonialoverlay d-flex align-items-center ps-2 ps-sm-5">
+                <div class="d-inline-flex flex-column align-items-start text-left">
+                <div class="mb-3"><img src="images/icon-stars.svg" width="213" alt=""></div>
+                <div><p class="text-white">During my four years of bachelor studies, I have gained the knowledge and skills that will help me develop my future career as an engineer. I am thankful to all the passionate teachers who were kind and well prepared for sharing their wisdom and experience with us.</p></div>
+                <div><h5 class="text-secondary">- John Doe</h5></div>
+                </div>
+                </div>
+                </div>
+
+
+
+
+
+
+
+
+                <div class="swiper-slide"  
+                style="background: url(images/engineering-student.jpg) no-repeat center center;">
+                <div class="testimonialoverlay d-flex align-items-center ps-2 ps-sm-5">
+                <div class="d-inline-flex flex-column align-items-start text-left">
+                <div class="mb-3"><img src="images/icon-stars.svg" width="213" alt=""></div>
+                <div><p class="text-white">During my four years of bachelor studies, I have gained the knowledge and skills that will help me develop my future career as an engineer. I am thankful to all the passionate teachers who were kind and well prepared for sharing their wisdom and experience with us.</p></div>
+                <div><h5 class="text-secondary">- John Doe</h5></div>
+                </div>
+                </div>
+                </div>
+
+
+
+
+
+             
+                
+
+
+                </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+<!-- end testimonials section-->
+
+
+<!-- photo gallery-->
+
+<div class="photogallery bg-grey">
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+
+        <h2 class="text-center">Photo Gallery</h2>
+
+        <div class="row">
+          <div class="col-12 col-md-6 p-2"><img src="images/img1.jpg" class="img-fluid rounded" alt=""></div>
+          <div class="col-12 col-md-6">
+            <div class="row">
+              <div class="col-12 col-md-6 p-2"><img src="images/img2.jpg" class="img-fluid rounded" alt=""></div>
+              <div class="col-12 col-md-6 p-2"><img src="images/img3.jpg" class="img-fluid rounded" alt=""></div>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-md-6 p-2"><img src="images/img4.jpg" class="img-fluid rounded" alt=""></div>
+              <div class="col-12 col-md-6 p-2"><img src="images/img5.jpg" class="img-fluid rounded" alt=""></div>
+            </div>
+
+          </div>
+        </div>
+
+
+        <div class="row m-2 my-sm-4">
+          <div class="col text-center">
+            <button class="btn btn-lg btn-secondary"> EXPLORE MORE <img src="images/icon-right-arrow.svg" width="14" alt=""> </button>
+          </div>
+        </div>
+   
+
+      </div>
+    </div>
+  </div>
+  
+</div>
+
+<!-- end photo gallery -->
+
+
+<!-- quick links-->
+
+<div class="quicklinks pt-2 py-sm-5">
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col">
+
+        <h2 class="text-center mb-4"> Quick Links </h2>
+
+        <div class="row">
+
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <ul>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Research Projects & Grants </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Research Innovations and Extension </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Anti-Ragging Committee </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Grievance Redressal Commmittee </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> HR Manual </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Audit statement </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> National Service Scheme -NSS </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Code of Conduct and Core Values </a>
+              </li>
+             
+
+            </ul>
+          </div>
+
+
+
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <ul>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Career Guidance and Counseling Cell </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Approvals from statutory body </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Sports Activities </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Administrative Bodies & Grievance-cell </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> LMS </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Academic Calendar </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Physical Facility Maintenance </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Centre for higher learning leading to Ph.D </a>
+              </li>
+             
+
+            </ul>
+          </div>
+
+
+
+
+          <div class="col-12 col-sm-6 col-md-4">
+            <ul>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Capability Enhancement & Schemes </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Human Values and Green Initiatives </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Knowledge resources for library enrichment </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Institution Best Practices </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Strategic plan and Deployment </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Organogram </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Welfare Measures </a>
+              </li>
+
+              <li>
+                <a href="javascript:;" class="text-dark"> Internal and External Audit Statements </a>
+              </li>
+             
+
+            </ul>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- end quick links-->
+
+
+<!-- footer-->
+<div class="footer bg-primary py-5">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <div><img src="images/logo-kdk-white.png" alt=""></div>
+        <div><h2 class="text-white mt-3">KDK COLLEGE OF ENGINEERING, NAGPUR</h2></div>
+        <div class="social-icons">
+          <a href="javascript:;" class="mx-2"> <img src="images/icon-facebook.svg" width="40" alt="">  </a>
+          <a href="javascript:;" class="mx-2"> <img src="images/icon-twitter.svg" width="40" alt="">  </a>
+          <a href="javascript:;" class="mx-2"> <img src="images/icon-instagram.svg" width="40" alt="">  </a>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <h4 class="text-secondary">Quick Links</h4>
+        <ul>
+          <li><a href="javascript:;" class="text-white"  > Home  </a></li>
+          <li><a href="javascript:;" class="text-white"  > About   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Courses  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Exam   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Time Table  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Results  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Student Development   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Advertisements    </a></li>
+          <li><a href="javascript:;" class="text-white"  > Photo Gallery     </a></li>
+        </ul>
+      </div>
+
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <h4 class="text-secondary">Quick Links</h4>
+        <ul>
+          <li><a href="javascript:;" class="text-white"  > Home  </a></li>
+          <li><a href="javascript:;" class="text-white"  > About   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Courses  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Exam   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Time Table  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Results  </a></li>
+          <li><a href="javascript:;" class="text-white"  > Student Development   </a></li>
+          <li><a href="javascript:;" class="text-white"  > Advertisements    </a></li>
+          <li><a href="javascript:;" class="text-white"  > Photo Gallery     </a></li>
+        </ul>
+      </div>
+
+
+
+      <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+        <h4 class="text-secondary mb-3">Contact Address</h4>
+     
+          <div class="d-flex flex-row align-items-start">
+            <div class="pe-3"> <img src="images/icon-location.svg" width="16" alt=""> </div>
+            <div> <p class="text-white">Great Nag Road, Nandanvan, Nagpur– 440 024 (M.S.)</p> </div>
+          </div>
+
+
+          <div class="d-flex flex-row align-items-start">
+            <div class="pe-3"> <img src="images/icon-phone.svg" width="25" alt=""> </div>
+            <div> <h2 class="text-secondary m-0 p-0">0712-2711400</h2> </div>
+          </div>
+
+
+          <div  class="mt-3 bg-secondary p-5 rounded-3">
+            <form>
+              <div class="mb-3">
+                
+                <input type="text" placeholder="Name" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               
+              </div>
+              <div class="mb-3">
+               
+                <input type="email" placeholder="Email" class="form-control" id="exampleInputPassword1">
+              </div>
+             
+              <button type="submit" class="btn btn-primary btn-lg">Subscribe </button>
+            </form>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- end footer-->
+
+
+<!-- lastfooter-->
+<div class="lastfooter bg-dark">
+<div class="container">
+  <div class="row">
+    <div class="col">
+
+      <p class="text-center text-white py-4">
+        Copyright © 2021  KDK College of Engineering, Nagpur  All rights reserved.
+      </p>
+
+    </div>
+  </div>
+</div>
+</div>
+<!-- end lastfooter-->
+
+
+
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.7.0/swiper-bundle.min.js" integrity="sha512-qqdD5ZLIGB5PCqCk1OD8nFBr/ngB5w+Uw35RE/Ivt5DK35xl1PFVkuOgAbqFpvtoxX6MpRGLmIqixzdhFOJhnA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
