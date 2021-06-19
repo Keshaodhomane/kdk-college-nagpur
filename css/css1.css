@@ -1,0 +1,17 @@
+.bg-primary
+{
+    background-color:#00366F !important;
+}
+
+.news-notice .overlaycolor
+{
+    background-color:rgba(0,54,111, 0.9) !important;
+}
+
+
+.testimonials .testimonialscontainer .testimonialSwiper .swiper-slide .testimonialoverlay{
+
+background: #00366F;
+background: linear-gradient(90deg, rgba(0,54,111, 0.9) 0%, rgba(0,0,0,0) 100%);
+
+}

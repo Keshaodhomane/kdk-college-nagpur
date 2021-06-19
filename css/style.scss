@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,600;0,700;1,200&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+/* fonts */
+
+
+$theme-colors: (
+
+    "primary":#1F565C,
+    "secondary":#FFC600,
+    "dark":#000000,
+    "grey":#ECECEC,
+    "darkyellow":#FFB603,
+    "white":#ffffff
+);
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+body {  font-family: "poppins"; }
+
+.navbar-dark .navbar-nav .nav-link{
+    color:rgba(255, 255, 255, 1);
+    @include media-breakpoint-up(md) {  font-size:0.938rem; }  
+    @include media-breakpoint-only(xs){font-size: 0.875rem;}
+ }
+
+ .dropdown-menu {
+    animation-name: slidenavAnimation;
+    animation-duration:.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+  }
+  @keyframes slidenavAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @-webkit-keyframes slidenavAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+
+.btn
+ {
+     border:none;
+     border-radius: 20px;
+     font-weight: bold;
+     font-family: "poppins";
+     padding: auto 0px;
+     font-size: 0.875rem;
+ }
+ 
+
+ h2{font-family: "teko"; color: #07294D;}
+
+ p
+ {
+     font-size: 0.95rem;
+     color: #808080;
+ }
+
+ .siteheading
+ {
+     h1
+     {
+        font-family:"teko";
+        font-size: 1.438rem;
+        padding: 0;
+        margin: 0;
+        @include media-breakpoint-up(md) {  font-size: 2.313rem; }  
+        @include media-breakpoint-up(sm) {  font-size: 2.188rem; }  
+
+     }
+
+     h2
+     {
+         font-family: "poppins";
+         font-size: 0.875rem;
+         text-transform: uppercase;
+         font-weight: bold;
+         padding: 0;
+         margin: 0;
+         @include media-breakpoint-up(md) { letter-spacing: 6px; } 
+         @include media-breakpoint-only(xs) { letter-spacing: 0px; }  
+       
+     }
+
+     p
+     {
+         color: #808080;
+         padding: 0;
+         margin: 0;
+         @include media-breakpoint-up(md) { letter-spacing: 0.12rem;   font-size: 0.875rem;}  
+         @include media-breakpoint-only(xs) { letter-spacing: 0.1rem;   font-size: 0.625rem; } 
+     }
+
+ }
+
+
+ 
+ .banner
+ {
+     overflow-x: hidden;
+     position:relative;  
+     height: 550px; 
+     width: 100%; 
+     display:block;   
+     
+     @include media-breakpoint-only(xs){display: none;}
+    
+
+     .bannerimg 
+     {
+        position: absolute;
+        height: 550px;
+        width: 1187px;
+        display: block;
+        right:0;   
+        @include media-breakpoint-up(md){
+        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);}
+
+            img
+            {  @include media-breakpoint-up(md){
+                clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); left:10px;}
+                position: relative;
+                 
+            }
+     }
+
+
+   
+    
+     .textbox
+     {
+         
+        @include media-breakpoint-up(sm)
+        {
+            position: absolute;
+            width: 616px;
+            height: 290px;
+            display: block;
+            left:calc(50% - 616px);
+            top:calc(50% - 145px);
+            z-index: 999;
+            background: white;
+            border-radius: 20px;
+            z-index: 100;
+           
+   
+            h2{
+                font-weight:bold;
+                font-family: "teko";   
+            }
+        }
+
+
+        @include media-breakpoint-only(xs){display: none;}
+
+        }
+ }
+
+
+.marquee
+{
+    min-height: 60px;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+
+    @include media-breakpoint-only(xs){
+        line-height: 40px;
+        min-height: 40px;
+        font-size: 0.8rem;
+        
+    }
+
+
+    span
+    {
+        display: inline-block;
+        padding-left:30px;
+        margin-right: 30px;        
+        background:url(../images/icon-yellow-arrow.svg) no-repeat left center;
+        background-size:20px 20px;
+    }
+}
+
+
+.about
+
+{
+    h1{
+        font-family: "teko";
+        font-size: 2.125rem;
+        @include media-breakpoint-only(xs){font-size: 1.563rem;}
+    }
+
+    h5{
+        font-family: "poppins";
+        font-weight: bold;
+        font-size: 1.25rem;
+        @include media-breakpoint-only(xs){font-size: 1rem;}
+    }
+
+
+}
+
+
+.mySwiper
+{
+   
+    .swiper-slide{
+    min-height: 222px;
+    }
+}
+
+
+
+.news-notice
+{
+    background: url(../images/kdk-college-bg-img.jpg) no-repeat center center;
+    background-size: cover;  
+
+    .overlaycolor
+    {
+        background-color:rgba(#1F565C, .9);
+    }
+
+
+    .newsmarquee
+    {
+        ul, li
+        {
+            list-style: none;
+            margin:0;
+            padding:0;
+        }
+       
+
+
+        .datewidth
+        {
+            width: 90px;
+            
+        }
+
+
+
+    }
+
+}
+
+
+
+.featuredevent
+{
+    background: url(../images/student-smile.jpg) no-repeat center center;
+    background-size: cover;
+
+    h2
+    {
+
+        font-family: "Michroma";
+        font-size:3.938rem;
+        
+        @include media-breakpoint-only(xs)
+        {
+                font-size: 1.563rem;
+        } 
+    }
+}
+
+
+.courses
+{
+    
+    background: url(../images/students-reading-books.jpg) no-repeat right bottom;
+    
+    @include media-breakpoint-only(xs)
+        {background:white;}
+
+        @include media-breakpoint-only(xl)
+        {
+            background-position:calc(100% + 200px) center;
+        }
+
+
+
+    h3{font-family: "teko";}
+
+    h4{font-family: "teko"; font-weight: normal;}
+
+    ul, li
+    {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    ul{
+        li{
+
+            a
+            {
+                background: url(../images/icon-right-arrow.svg) no-repeat left center;
+                background-size: 14px auto;
+                text-decoration:none;
+                @include media-breakpoint-only(xs){font-size: 0.875rem;}
+            }
+
+        }
+    }
+}
+
+
+.testimonials
+{
+    position: relative;
+
+    .greenht
+    {
+        height: 400px;
+    }
+
+    .yellowht
+    {
+        height: 53px;
+    }
+
+
+    .testimonialscontainer
+    {
+        position: absolute;
+        width: 100%;
+        left:0;
+        top:0;
+
+
+        .testimonialSwiper
+        {
+            .swiper-slide{
+
+            .testimonialoverlay
+            {
+                min-height: 400px;
+                background: rgb(31,86,92);
+                background: linear-gradient(90deg, rgba(31,86,92,1) 0%, rgba(0,0,0,0) 100%);
+
+                &>div{width: 50%;}
+
+                @include media-breakpoint-only(xs)
+                {
+                    background:#1F565C;
+
+                    &>div{width: 100%;}
+
+                    }
+                }
+            
+            }
+        }
+
+    }
+    
+}
+
+
+
+
+.photogallery
+{
+    padding-top: 120px;
+}
+
+
+
+.quicklinks
+{
+    ul, li
+    {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+
+    ul
+    {
+        li
+        {
+             a{
+                background: url(../images/icon-right-arrow.svg) no-repeat left center;
+                background-size: 14px auto;
+                text-decoration:none;
+                padding-left: 30px;
+                text-decoration:none;
+                line-height: 40px;
+
+                @include media-breakpoint-only(xs){font-size: 0.875rem;}
+                
+             }
+        }
+    }
+}
+
+
+
+.footer
+{
+    ul, li
+    {
+        margin:0;
+        padding:0;
+        list-style: none;
+    }
+
+    ul{
+        li{
+            a{
+                background: url(../images/icon-white-arrow-new.svg) no-repeat left center;
+                background-size: 14px auto;
+                text-decoration:none;
+                padding-left: 30px;
+                text-decoration:none;
+                line-height: 40px;
+                @include media-breakpoint-only(xs){font-size: 0.875rem;}
+            }
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bluebg-strip {
+    
+    display: grid;
+    grid-template-columns: 1fr;
+    color: #fff;
+    min-height: 40px;
+}
+
+
+.bluebg-strip > div
+{
+    align-self: center;
+    justify-self: center;
+}
+
+.allinline * {
+    font-size: 0.875rem;
+    font-family: "poppins";
+}
+
+.allinline a,
+.allinline span {
+    color: rgba(255,255,255,0.8);
+    line-height: 30px;
+    display: inline-block;
+    *display: inline;
+    margin: 0 5px;
+    text-decoration: none;
+    
+}
+
+.skiptomain {
+    background: url(../images/downarrow_icon.svg) no-repeat center left;
+    background-size: 15px auto;
+    padding-left: 20px;
+}
+
+
+
+.skiptonav {
+    background: url(../images/downarrow_icon.svg) no-repeat center left;
+    background-size: 15px auto;
+    padding-left: 20px;
+}
+
+
+
+.screenreader {
+    background: url(../images/speaker_icon.svg) no-repeat center left;
+    background-size: 20px auto;
+    padding-left: 30px;
+}
+
+
+
+
+.default-css
+{
+    border:1px solid rgba(255,255,255,0.2); 
+    line-height: 22px !important; 
+    width: 25px; 
+    background: #2A757D; 
+    font-family: "poppins";
+    font-size: 0.938rem;
+    border-radius: 2px;
+}
+
+
+
+.css1
+{
+    border:1px solid rgba(255,255,255,0.2); 
+    line-height: 22px !important; 
+    width: 25px; 
+    background: #00366F; 
+    font-family: "poppins";
+    font-size: 0.938rem;
+    border-radius: 2px;
+}
+
+
+.css2
+{
+    border:1px solid rgba(255,255,255,0.2); 
+    line-height: 22px !important; 
+    width: 25px; 
+    background: #79244D; 
+    font-family: 'poppins';
+    font-size: 0.938rem;
+    border-radius: 2px;
+}
+
+
+
+
+.css3
+{
+    border:1px solid rgba(255,255,255,0.2); 
+    line-height: 22px !important; 
+    width: 25px; 
+    background: grey; 
+    font-family: 'poppins';
+    font-size: 0.938rem;
+    border-radius: 2px;
+}
+
+
+
+.internallinks
+
+{
+
+
+    ul, li
+    {
+        list-style: none;
+        margin:0;
+        padding:0;
+    }
+
+    ul
+    {
+        li
+        {
+             a{
+                background: url(../images/icon-right-arrow.svg) no-repeat left center;
+                background-size: 14px auto;
+                text-decoration:none;
+                padding-left: 30px;
+                text-decoration:none;
+                line-height: 40px;
+                font-size: .9rem;
+
+                @include media-breakpoint-only(xs){font-size: 0.875rem;}
+                
+             }
+        }
+    }
+
+
+}
