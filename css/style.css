@@ -11497,6 +11497,7 @@ p {
 
 .courses {
   background: url(../images/students-reading-books.jpg) no-repeat right bottom;
+  background-size: 600px;
 }
 
 @media (max-width: 575.98px) {
@@ -11505,9 +11506,22 @@ p {
   }
 }
 
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .courses {
+    background: white;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .courses {
+    background: white;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1399.98px) {
   .courses {
-    background-position: calc(100% + 200px) center;
+    background-position: calc(100% + 100px) bottom;
+    background-size: 500px;
   }
 }
 

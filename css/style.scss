@@ -292,13 +292,21 @@ body {  font-family: "poppins"; }
 {
     
     background: url(../images/students-reading-books.jpg) no-repeat right bottom;
+    background-size: 600px;
     
     @include media-breakpoint-only(xs)
         {background:white;}
 
+        @include media-breakpoint-only(sm)
+        {background:white;}
+
+        @include media-breakpoint-only(md)
+        {background:white;}
+
         @include media-breakpoint-only(xl)
         {
-            background-position:calc(100% + 200px) center;
+            background-position:calc(100% + 100px) bottom;
+            background-size: 500px;
         }
 
 
