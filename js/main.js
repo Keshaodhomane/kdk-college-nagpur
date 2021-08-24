@@ -105,26 +105,26 @@ function DecreaseFontSize() {
 
  
 var slide = document.querySelectorAll(".sliderwrapper > div");
-var leftimg = document.querySelectorAll(".sliderwrapper > div  .leftimg");
-var righttext = document.querySelectorAll(".sliderwrapper >  div > .righttext");
+var leftimg = document.querySelectorAll(".sliderwrapper > div > div > div > div .leftimg");
+var righttext = document.querySelectorAll(".sliderwrapper >  div > div > div > div .righttext");
 
-var tl = gsap.timeline({repeat:-1});
-
-tl.set(slide,{autoAlpha:0})
+var tl = gsap.timeline({repeat:-1})
+tl.set(slide,{autoAlpha:0, display:"none" })
 tl.set(leftimg,{autoAlpha:0})
 tl.set(righttext,{autoAlpha:0})
 
 slide.forEach(function(slides, element) {
   
-  tl.from(slide[element], {duration:.5, autoAlpha:0})
+  tl.to(slide[element], {duration:.5, autoAlpha:1, display:"block"})
 
   tl.from(leftimg[element], {duration:1, right:"-3000px", autoAlpha:0, ease: "expo.out",})
 
   tl.from(righttext[element], {duration:1, left:"-1000px", scale:3, autoAlpha:0, ease: "expo.out", delay:-.5} )
 
   tl.to(slide[element], {duration:.5,   autoAlpha:0, delay:5})
+  tl.to(slide[element], {duration:0, display:"none"})
 
-  } )
+   } )
 
 
 tl.play();
