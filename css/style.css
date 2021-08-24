@@ -11347,7 +11347,6 @@ p {
 .banner {
   overflow-x: hidden;
   position: relative;
-  height: 550px;
   width: 100%;
   display: block;
 }
@@ -11358,49 +11357,21 @@ p {
   }
 }
 
-.banner .bannerimg {
-  position: absolute;
-  height: 550px;
-  width: 1187px;
-  display: block;
-  right: 0;
+.banner .textbox h2, .banner .textbox .h2 {
+  font-weight: bold;
+  font-family: "teko";
+  color: white;
 }
 
-@media (min-width: 768px) {
-  .banner .bannerimg {
-    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-  }
-}
-
-.banner .bannerimg img {
-  position: relative;
-}
-
-@media (min-width: 768px) {
-  .banner .bannerimg img {
-    -webkit-clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-            clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
-    left: 10px;
-  }
+.banner .textbox p {
+  color: white;
 }
 
 @media (min-width: 576px) {
-  .banner .textbox {
-    position: absolute;
-    width: 616px;
-    height: 290px;
-    display: block;
-    left: calc(50% - 616px);
-    top: calc(50% - 145px);
-    z-index: 999;
-    background: white;
-    border-radius: 20px;
-    z-index: 100;
-  }
   .banner .textbox h2, .banner .textbox .h2 {
     font-weight: bold;
     font-family: "teko";
+    color: white;
   }
 }
 

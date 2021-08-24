@@ -119,7 +119,7 @@ body {  font-family: "poppins"; }
  {
      overflow-x: hidden;
      position:relative;  
-     height: 550px; 
+     
      width: 100%; 
      display:block;   
      
@@ -128,20 +128,9 @@ body {  font-family: "poppins"; }
 
      .bannerimg 
      {
-        position: absolute;
-        height: 550px;
-        width: 1187px;
-        display: block;
-        right:0;   
-        @include media-breakpoint-up(md){
-        clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);}
-
-            img
-            {  @include media-breakpoint-up(md){
-                clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%); left:10px;}
-                position: relative;
-                 
-            }
+        
+       
+       
      }
 
 
@@ -149,24 +138,25 @@ body {  font-family: "poppins"; }
     
      .textbox
      {
-         
+        
+        h2{
+            font-weight:bold;
+            font-family: "teko";  
+            color: white; 
+        }
+
+        p{color:white;}
+
+
         @include media-breakpoint-up(sm)
         {
-            position: absolute;
-            width: 616px;
-            height: 290px;
-            display: block;
-            left:calc(50% - 616px);
-            top:calc(50% - 145px);
-            z-index: 999;
-            background: white;
-            border-radius: 20px;
-            z-index: 100;
+                     
            
    
             h2{
                 font-weight:bold;
-                font-family: "teko";   
+                font-family: "teko";  
+                color: white; 
             }
         }
 
