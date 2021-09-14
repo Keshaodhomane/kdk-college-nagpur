@@ -11719,4 +11719,67 @@ p {
     font-size: 0.875rem;
   }
 }
+
+.link-box {
+  position: relative;
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 137px;
+  background: #FFB603;
+  margin-top: 60px;
+  padding-top: 60px;
+  border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: all, 0.5s;
+  transition: all, 0.5s;
+}
+
+.link-box .link-icon {
+  width: 100px;
+  height: 100px;
+  background: #1F565C;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -webkit-transition: all, 0.2s;
+  transition: all, 0.2s;
+}
+
+.link-box .link-icon > img {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.link-box .link-title {
+  color: #07294d;
+  font-weight: bold;
+  font-family: "roboto";
+}
+
+.link-box:hover {
+  background: #1F565C;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.link-box:hover > .link-icon {
+  background: #EFB900;
+  height: 110px;
+  width: 110px;
+  left: calc(50% - 55px);
+  top: -55px;
+}
+
+.link-box:hover > .link-title {
+  color: #fff;
+}
 /*# sourceMappingURL=style.css.map */
